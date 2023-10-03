@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>App</h1>
+    </header>
+
+    <main>
+        <section>
+            <a href="{% url 'admin:index' %}">Admin</a>
+            <h4></h4>
+        </nav>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; {% now 'Y' %} App</p>
+    </footer>
+</body>
+</html>
